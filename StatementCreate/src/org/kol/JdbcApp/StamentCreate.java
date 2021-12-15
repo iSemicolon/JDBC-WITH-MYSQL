@@ -8,20 +8,20 @@ import java.sql.Statement;
 public class StamentCreate {
 
 	public static void main(String[] args) {
-		
+
 		Connection con=null;
 		Statement stmt=null;
-		
+
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.println("Driver Loaded and Registered");
-			
+
 			con=DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=root");
 			System.out.println("Connection Established With Db server");
-			
+
 			stmt=con.createStatement();
 			System.out.println("Statement Created Sucessfully");
-			
+
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
@@ -36,7 +36,7 @@ public class StamentCreate {
 					e.printStackTrace();
 				}
 			}
-			
+
 			if(con !=null)
 				try {
 					con.close();
@@ -47,5 +47,4 @@ public class StamentCreate {
 			System.out.println("Costly Resources Closed");
 		}
 	}
-
 }
