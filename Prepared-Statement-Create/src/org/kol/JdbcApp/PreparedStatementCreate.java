@@ -57,7 +57,6 @@ public class PreparedStatementCreate {
 
 			System.out.println("Costly Resources Closed");
 		}
-
 	}
 
 }
