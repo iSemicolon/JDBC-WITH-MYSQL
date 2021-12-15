@@ -8,6 +8,7 @@ import java.sql.Statement;
 public class StamentCreate {
 
 	public static void main(String[] args) {
+		
 		Connection con=null;
 		Statement stmt=null;
 		
