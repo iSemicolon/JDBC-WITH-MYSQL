@@ -13,6 +13,7 @@ public class StamentCreate {
 		Statement stmt=null;
 
 		try {
+			
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.println("Driver Loaded and Registered");
 
