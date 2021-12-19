@@ -46,6 +46,7 @@ public class TransactionDemo {
 			System.out.println("Student Educational details Updated");
 
 			pstmt1=con.prepareStatement(sper);
+			
 			pstmt1.setInt(1,id);
 			pstmt1.setString(2, name);
 			pstmt1.setString(3, dept);
