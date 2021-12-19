@@ -14,7 +14,7 @@ public class BatchUpdate {
 		PreparedStatement pstmt=null;
 		PreparedStatement pstmt1=null;
 		
-		String inqry="INSERT INTO kol.student values(38,'joker',72.32)";
+		String inqry="INSERT INTO kol.student values(348,'joker',72.32)";
 		String delqry="DELETE FROM kol.login where Name ='NANDA'";
 		
 		try {
@@ -59,6 +59,7 @@ public class BatchUpdate {
 					e.printStackTrace();
 				}
 
+				
 				if(pstmt1!=null) {
 					try {
 						pstmt1.close();
