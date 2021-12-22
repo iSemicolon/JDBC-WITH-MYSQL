@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /*
+ 
  CREATE TABLE `kol`.`student` (
   `Id` INT NOT NULL,
   `name` VARCHAR(45) NULL,
